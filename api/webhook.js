@@ -87,3 +87,6 @@ async function sendEmail(email, content, orderNumber) {
   // Later implementeren met nodemailer
   return true;
 }
+
+// Export de handler function voor Vercel
+module.exports = handler;
