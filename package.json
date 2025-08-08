@@ -1,9 +1,0 @@
-{
-  "name": "shopify-accounts-webhook",
-  "version": "1.0.0",
-  "dependencies": {
-    "csv-parse": "^5.3.3",
-    "csv-stringify": "^5.6.5",
-    "nodemailer": "^6.9.7"
-  }
-}
