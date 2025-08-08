@@ -1,0 +1,12 @@
+{
+  "name": "shopify-accounts-webhook",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "echo 'Build complete'",
+    "start": "node api/webhook.js"
+  },
+  "dependencies": {
+    "csv-parse": "^5.3.3",
+    "nodemailer": "^6.9.7"
+  }
+}
