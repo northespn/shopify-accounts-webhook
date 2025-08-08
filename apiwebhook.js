@@ -16,6 +16,11 @@ export default async function handler(req, res) {
       return res.status(400).json({ error: 'Invalid order data' });
     }
 
+    // Check of order betaald is
+    if (order.financial_status !== 'paid') {
+      return res.status(200).json({ message: 'Order not paid yet, skipping' });
+    }
+
     const quantity = order.line_items[0].quantity;
     const productSku = order.line_items[0].sku;
     const customerEmail = order.email || order.customer?.email;
