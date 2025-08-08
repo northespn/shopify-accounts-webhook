@@ -2,8 +2,7 @@
   "name": "shopify-accounts-webhook",
   "version": "1.0.0",
   "scripts": {
-    "build": "echo 'Build complete'",
-    "start": "node api/webhook.js"
+    "build": "mkdir -p public && echo 'Build complete' > public/index.html"
   },
   "dependencies": {
     "csv-parse": "^5.3.3",
